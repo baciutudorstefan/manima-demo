@@ -1,5 +1,4 @@
-# SPA Authentication using Laravel 9 Sanctum, Vue 3 and Vite
-
+MANIMA
 ```
 composer install
 cp .env.example .env
