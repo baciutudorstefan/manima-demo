@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid about-container">
+    <div class="container-fluid about-container pl-0 pr-0 mr-0 ml-0">
         <div class="container about-paddingTop" style="background: transparent">
             <div class="row justify-content-center">
                 <div class="col-2 align-self-center">
@@ -167,6 +167,43 @@
                 </ul>
             </div>
         </div>
+        <div class="row footer">
+            <div class="col-4">
+                <p class="fw-bold footerTitle mt-0 pb-0 mb-0">MANIMA</p>
+                <span class="fw-lighter copyright">Copyright 2023</span>
+            </div>
+            <ul class="col-4 footerList">
+                <li class="fw-light pb-1">hello@manima.io</li>
+                <li class="fw-light pb-1 pt-1">Privacy policy</li>
+                <li class="fw-light pt-1">Terms and conditions</li>
+            </ul>
+            <ul class="col-4 footerList">
+                <li class="pt-1 pb-1">
+                    <router-link
+                        :to="{ name: 'register' }"
+                        class="about-route readyToBuild_btns"
+                    >
+                        About
+                    </router-link>
+                </li>
+                <li class="pt-1 pb-1">
+                    <router-link
+                        :to="{ name: 'register' }"
+                        class="about-route readyToBuild_btns"
+                    >
+                        Features
+                    </router-link>
+                </li>
+                <li class="pt-1 pb-1">
+                    <router-link
+                        :to="{ name: 'register' }"
+                        class="about-route readyToBuild_btns"
+                    >
+                        Get started
+                    </router-link>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -261,5 +298,16 @@ export default {
     margin-left: 64px !important;
     margin-right: 64px !important;
     padding: 64px;
+}
+.footer {
+    background: #fff;
+    padding: 64px;
+    margin-top: 140px;
+}
+.footerTitle {
+    font-size: 64px;
+}
+.footerList {
+    list-style-type: none;
 }
 </style>
