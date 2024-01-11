@@ -39,6 +39,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
+            'max_size' => 99999, 
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
             'throw' => false,
